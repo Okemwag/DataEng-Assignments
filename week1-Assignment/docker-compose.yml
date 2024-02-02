@@ -1,16 +1,16 @@
 version: '3'
 services:
   postgres:
-    image: postgres:15.0-alpine
+    image: postgres:14
     restart: always
     environment:
-      POSTGRES_USER: okemwag
-      POSTGRES_PASSWORD: passwd123
-      POSTGRES_DB: datacamp_db
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: ny_taxi
     volumes:
       - "./ny_taxi_postgres_data:/var/lib/postgresql/data:rw"
     ports:
-      - 5432:5432
+      - 5434:5432
 
   pgadmin:
     image: dpage/pgadmin4
@@ -21,3 +21,4 @@ services:
       - "./data_pgadmin:/var/lib/pgadmin"
     ports:
       - "8080:80"
+

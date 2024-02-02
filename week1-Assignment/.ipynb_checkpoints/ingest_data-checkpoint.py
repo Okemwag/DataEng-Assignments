@@ -16,8 +16,8 @@ def main(params):
     db = params.db
     table_name_zones = params.table_name_zones
     table_name_trips = params.table_name_trips
-    url_zones = "https://raw.githubusercontent.com/Okemwag/week1-Assignment/taxi%2B_zone_lookup.csv"
-    url_trips = "https://raw.githubusercontent.com/Okemwag/Week1-Assignment/green_tripdata_2019-09.csv"
+    url_zones = "https://raw.githubusercontent.com/atsterq/data-engineering-zoomcamp-2024/main/01-docker-terraform/homework/taxi%2B_zone_lookup.csv"
+    url_trips = "https://raw.githubusercontent.com/atsterq/data-engineering-zoomcamp-2024/main/01-docker-terraform/homework/green_tripdata_2019-09.csv"
     csv_zones = "zones.csv"
     csv_trips = "trips.csv"
 
